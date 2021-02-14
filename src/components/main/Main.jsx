@@ -1,7 +1,9 @@
-import "../main/Main.scss";
-import Sidebar from "../sidebar/Sidebar";
-import Navbar from "../navbar/Navbar";
-import MainContent from "../main-content/main_content";
+import "./../main/main.scss";
+import Sidebar from "./sidebar/Sidebar";
+import Navbar from "./navbar/Navbar";
+import MainContent from "../home/home";
+import WorkFlow from "../workFlow/workFlow";
+import { Route, Switch } from "react-router";
 
 const Main = (props) => {
   return (
@@ -9,10 +11,11 @@ const Main = (props) => {
       <span>
         <Sidebar />
       </span>
-
       <span style={{ width: "inherit" }}>
         <Navbar />
-        <MainContent />
+        <Route path='/' exact component={MainContent} />
+        <Route path='/home' component={MainContent} />
+        <Route path='/workFlow' exact component={WorkFlow} />
       </span>
     </div>
   );

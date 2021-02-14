@@ -1,5 +1,5 @@
 import Message from "./message/message";
-import "../messages/messages.scss";
+import "./messages.scss";
 
 const Messages = () => {
   return (
@@ -11,8 +11,9 @@ const Messages = () => {
         </span>
       </div>
       <div className='messages_list'>
-        <Message newMessage='true' />
-        <Message newMessage='true' />
+        <Message notRead={true} />
+        <Message notRead={true} />
+        <Message />
         <Message />
       </div>
     </div>

@@ -1,4 +1,4 @@
-import "../main-content/main_content.scss";
+import "../home/home.scss";
 import Tasks from "./tasks/tasks";
 import Messages from "./messages/messages";
 import Activity from "./activity/activity";

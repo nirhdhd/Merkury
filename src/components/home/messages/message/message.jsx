@@ -1,11 +1,20 @@
-import "../message/message.scss";
+import React, { useState } from "react";
+import "./message.scss";
 import arrowBack from "../../../../assets/images/messages/arrowBack.png";
 import settings from "../../../../assets/images/messages/settings.png";
 import profile_2 from "../../../../assets/images/profilesImages/profile_2.jpg";
 
 const Message = (props) => {
+  const [divColor, setDivColor] = useState({ backgroundColor: "white" });
+  const [flag, setFlag] = useState(0);
+
+  if (flag == 0) {
+    if (props.notRead == true) setDivColor({ backgroundColor: "#ececec" });
+    setFlag(1);
+  }
+
   return (
-    <div className='message'>
+    <div style={divColor} className='message'>
       <div className='profile_Img_place'>
         <img className='profileImgStyle' src={profile_2} />
       </div>
