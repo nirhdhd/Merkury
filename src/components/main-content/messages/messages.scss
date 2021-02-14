@@ -1,0 +1,20 @@
+.messages_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 87px;
+  font-family: Roboto;
+  font-size: 24px;
+  color: #0e1a35;
+  font-weight: 500;
+  border-bottom: 1px solid #8492af36;
+  padding-left: 23px;
+  text-decoration: wavy;
+}
+
+.messages_notifications {
+  display: flex;
+  justify-content: space-around;
+  width: 109px;
+  margin-right: 13px;
+}

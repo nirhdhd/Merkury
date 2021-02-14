@@ -1,0 +1,35 @@
+.tasks_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 87px;
+  font-family: Roboto;
+  font-size: 24px;
+  color: #0e1a35;
+  font-weight: 500;
+  border-bottom: 1px solid #8492af36;
+  padding-left: 23px;
+  text-decoration: wavy;
+}
+
+.tasks_notifications {
+  display: flex;
+  justify-content: space-around;
+  width: 109px;
+  margin-right: 13px;
+}
+
+.circle1,
+.circle2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #5384ff;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  color: white;
+}
+.circle2 {
+  background-color: #f83c7b;
+}

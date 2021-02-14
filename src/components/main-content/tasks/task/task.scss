@@ -1,0 +1,62 @@
+.task {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid #8492af41;
+  align-items: center;
+  height: 108px;
+
+  &_circle {
+    //TODO::MAKE AS MIXING
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 47px;
+    height: 47px;
+    background-color: #5384ff;
+    margin-left: 35px;
+    color: white;
+    font-size: 25px;
+    font-family: Roboto;
+    font-weight: 500;
+  }
+
+  &_content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+
+    // width: fit-content;
+    height: 47px;
+    margin-left: 26px;
+    padding-left: 16px;
+
+    font-family: Roboto;
+    font-size: 19.5px;
+    font-weight: 500;
+    color: #0e1a35;
+
+    &_time {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      color: #f83c7b;
+      font-family: Roboto;
+      font-size: 14px;
+      height: 31px;
+    }
+  }
+
+  &_options {
+    margin-right: 35px;
+  }
+}
+
+.clock_img {
+  height: 15px;
+  margin-right: 5px;
+}

@@ -1,0 +1,43 @@
+.activity_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 87px;
+  font-family: Roboto;
+  font-size: 24px;
+  color: #0e1a35;
+  font-weight: 500;
+  border-bottom: 1px solid #8492af36;
+  padding-left: 23px;
+  text-decoration: wavy;
+}
+
+.activity_notifications {
+  display: flex;
+  justify-content: space-around;
+  width: 109px;
+  margin-right: 13px;
+}
+
+.circle1 {
+  background: lightblue;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  background-color: #5384ff;
+}
+
+.activity_list {
+  position: relative;
+}
+
+.timeline {
+  position: absolute;
+  top: 75px;
+  width: 1px;
+  height: 313px;
+  margin: 3px 46px 10px 60px;
+  opacity: 0.3;
+  background-color: #8492af;
+  z-index: 1;
+}

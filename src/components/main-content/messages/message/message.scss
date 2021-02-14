@@ -1,0 +1,63 @@
+.message {
+  display: flex;
+  flex-direction: row;
+  //align-items: flex-start;
+  //justify-content: space-between;
+  border-bottom: 1px solid #8492af41;
+  align-items: center;
+  height: 108px;
+  font-size: 14px;
+
+  &_content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    align-items: flex-start;
+    padding-top: 11px;
+  }
+
+  &_name {
+    font-size: 14px;
+    font-family: "Roboto";
+    font-weight: 600;
+    color: #0e1a35;
+  }
+
+  &_time {
+    font-family: "Roboto-Regular";
+    color: #8492af;
+    font-weight: 200;
+  }
+
+  &_txt {
+    font-family: Roboto-Regular;
+    margin-top: 4px;
+    font-weight: 200;
+  }
+
+  &_options {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+    width: 45px;
+  }
+}
+
+.profile_Img_place {
+  border-radius: 50%;
+  width: 47px;
+  height: 47px;
+  background-color: #5384ff;
+  margin-left: 35px;
+}
+
+// .message_content {
+//   display: flex;
+//   flex-direction: column;
+// }
+// .message_name {
+//   font-family: Roboto-Medium;
+//   color: #0e1a35;
+//   font-size: 14px;
+// }

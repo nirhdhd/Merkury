@@ -1,0 +1,69 @@
+.navbar {
+  border: solid 1px rgba(132, 146, 175, 0.3);
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+
+  padding: 31px 0px 35px 0px;
+  border: solid 1px rgba(132, 146, 175, 0.3);
+  width: 100%;
+}
+
+.button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+  display: flexbox;
+  justify-content: center;
+  align-items: center;
+  width: 178px;
+  height: 48px;
+  margin: 2px 52px 3px 972px;
+  padding: 16px 31px 14px 25px;
+  background-color: #5584ff;
+  color: #ffffff;
+  border-radius: 30px;
+  margin: 0 0 0 13px;
+  font-family: Roboto;
+  font-size: 18px;
+}
+
+.navbar {
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.right-side,
+.left-side {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.right-side {
+  padding-right: 30px;
+  width: 400px;
+}
+
+.left-side {
+  width: 90px;
+  padding-left: 30px;
+}
+
+.plusImg {
+  padding-right: 10px;
+}
+
+.toggel {
+  transition: margin 0.25s ease-out;
+}
