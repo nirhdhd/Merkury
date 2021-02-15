@@ -14,28 +14,7 @@ import { useSelector, useDispatch } from "react-redux";
 const Sidebar = (props) => {
   let history = useHistory();
   const isSidebarOpen = useSelector((state) => state.isSidebarOpen);
-
   const [selected, setSelected] = useState("home");
-
-  // if (props.isSidebarOpen) {
-  // }
-  // console.log(props.isSidebarOpen);
-
-  // const toggelSidebar = () => {
-  //   if (sidebarState == "sidebar") {
-  //     setSidebarState({
-  //       sidebar: "sidebar_close",
-  //       logoDiv: "logoDiv close",
-  //       option: "option close",
-  //     });
-  //   } else {
-  //     setSidebarState({
-  //       sidebar: "sidebar",
-  //       logoDiv: "logoDiv",
-  //       option: "option",
-  //     });
-  //   }
-  // };
 
   const changeRoute = (routeString) => {
     setSelected(routeString);
