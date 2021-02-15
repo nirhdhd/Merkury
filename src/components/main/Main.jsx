@@ -14,7 +14,7 @@ const Main = (props) => {
       <span style={{ width: "inherit" }}>
         <Navbar />
         <Route
-          path='/Merkury-ui-home-task'
+          path='https://nirhdhd.github.io/Merkury-ui-home-task/'
           exact
           component={MainContent}
         />{" "}
