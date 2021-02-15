@@ -14,8 +14,8 @@ import { useSelector, useDispatch } from "react-redux";
 const Sidebar = (props) => {
   let history = useHistory();
   const isSidebarOpen = useSelector((state) => state.isSidebarOpen);
-  const dispatch = useDispatch();
-  const [isOpen, setIsOpen] = useState();
+
+  const [selected, setSelected] = useState("home");
 
   // if (props.isSidebarOpen) {
   // }
@@ -38,6 +38,7 @@ const Sidebar = (props) => {
   // };
 
   const changeRoute = (routeString) => {
+    setSelected(routeString);
     history.push(`/${routeString}`);
   };
 
@@ -48,7 +49,7 @@ const Sidebar = (props) => {
       </div>
 
       <div
-        className='Home'
+        id={selected == "home" ? "selected" : ""}
         className={isSidebarOpen ? "option" : "option close"}
         onClick={() => changeRoute("home")}
       >
@@ -57,7 +58,7 @@ const Sidebar = (props) => {
       </div>
 
       <div
-        className='workflow'
+        id={selected == "workflow" ? "selected" : ""}
         className={isSidebarOpen ? "option" : "option close"}
         onClick={() => changeRoute("workflow")}
       >
@@ -66,36 +67,36 @@ const Sidebar = (props) => {
       </div>
 
       <div
-        className='Statistics'
+        id={selected == "statistics" ? "selected" : ""}
         className={isSidebarOpen ? "option" : "option close"}
-        onClick={() => changeRoute("Statistics")}
+        onClick={() => changeRoute("statistics")}
       >
         <img className='icon' src={statistics} />
         Statistics
       </div>
 
       <div
-        className='Calendar'
+        id={selected == "calendar" ? "selected" : ""}
         className={isSidebarOpen ? "option" : "option close"}
-        onClick={() => changeRoute("Calendar")}
+        onClick={() => changeRoute("calendar")}
       >
         <img className='icon' src={calendar} />
         Calendar
       </div>
 
       <div
-        className='Users'
+        id={selected == "users" ? "selected" : ""}
         className={isSidebarOpen ? "option" : "option close"}
-        onClick={() => changeRoute("Users")}
+        onClick={() => changeRoute("users")}
       >
         <img className='icon' src={users} />
         Users
       </div>
 
       <div
-        className='Settings'
+        id={selected == "settings" ? "selected" : ""}
         className={isSidebarOpen ? "option" : "option close"}
-        onClick={() => changeRoute("Settings")}
+        onClick={() => changeRoute("settings")}
       >
         <img className='icon' src={settings} />
         Settings

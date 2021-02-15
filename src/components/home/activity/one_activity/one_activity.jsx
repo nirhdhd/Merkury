@@ -6,14 +6,14 @@ const One_activity = (props) => {
   return (
     <div className='activity'>
       <div className='activity_userProfile'>
-        <img className='profileImgStyle' src={profile_1} />
+        <img className='profileImgStyle' src={props.pic} />
       </div>
       <div className='activity_content'>
         <div className='activity_message'>
-          <span className='activity_message_name'>Nina Jones </span>&nbsp;
-          <span className='activity_message_action'>added a new project </span>
+          <span className='activity_message_name'>{props.name} </span>&nbsp;
+          <span className='activity_message_action'>{props.action} </span>
           &nbsp;
-          <span className='activity_message_subject'>Free UI Kit</span>
+          <span className='activity_message_subject'>{props.task}</span>
         </div>
         <div className='activity_content_time'>
           <img className='clock_img' src={clock} />

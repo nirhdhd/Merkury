@@ -1,5 +1,7 @@
 import Message from "./message/message";
 import "./messages.scss";
+import profile_3 from "../../../assets/images/profilesImages/profile_3.png";
+import profile_6 from "../../../assets/images/profilesImages/profile_6.png";
 
 const Messages = () => {
   return (
@@ -11,10 +13,32 @@ const Messages = () => {
         </span>
       </div>
       <div className='messages_list'>
-        <Message notRead={true} />
-        <Message notRead={true} />
-        <Message />
-        <Message />
+        <Message
+          pic={profile_3}
+          name={"Nina Jones"}
+          time={"5 minutes ago"}
+          text={"Hey You! It’s me again :-) I attached new (...)"}
+          notRead={true}
+        />
+        <Message
+          pic={profile_3}
+          name={"Nina Jones"}
+          time={"About 20 hours ago"}
+          text={"Hey! I attached some new PSD files for (...)"}
+          notRead={true}
+        />
+        <Message
+          pic={profile_6}
+          name={"James Smith"}
+          time={"2 days ago"}
+          text={"Good morning, you are fired!"}
+        />
+        <Message
+          pic={profile_3}
+          name={"Nina Jones"}
+          time={"About 2 weeks ago"}
+          text={"Hello! Could You bring me coffee please?"}
+        />
       </div>
     </div>
   );

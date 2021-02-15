@@ -24,7 +24,7 @@ const Task = (props) => {
         </div>
       </div>
       <div className='task_options'>
-        <img src={options} />
+        <img className='cursor' src={options} />
       </div>
     </div>
   );

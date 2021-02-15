@@ -16,40 +16,19 @@
   }
 }
 
-// .sidebar-close {
-//   display: flex;
-//   flex-direction: column;
-//   background-color: #0e1a35;
-//   height: 1352px;
-//   width: 0px;
-//   transition: width 0.5s ease-in-out;
-// }
-
 .logoDiv {
   height: 100px;
   display: flex;
   align-items: center;
   padding: 10px 0px 10px 40px;
-  // transition: visibility 0.5s ease-in-out;
   transition: opacity 0.6s ease-in-out;
-
-  // visibility: visible;
 }
-
-// .logoDiv_close {
-//   height: 117px;
-//   display: flex;
-//   align-items: center;
-//   padding: 10px 0px 10px 40px;
-//   opacity: 0;
-//   // transition: visibility 0.5s ease-in-out;
-//   transition: opacity 5s ease-in-out;
-// }
 
 .imgLogo {
   width: 181px;
   height: 50px;
 }
+
 .icon {
   margin-right: 15px;
 }
@@ -77,7 +56,11 @@
 }
 
 .close {
-  // visibility: hidden;
   opacity: 0;
   z-index: -1;
+}
+
+#selected {
+  // transition: background-color 0.1s ease-in-out;
+  background-color: #2a4280;
 }
