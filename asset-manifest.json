@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/Merkury-ui-home-task/static/css/main.3c6c1c0b.chunk.css",
+    "main.js": "/Merkury-ui-home-task/static/js/main.e457bd0c.chunk.js",
+    "main.js.map": "/Merkury-ui-home-task/static/js/main.e457bd0c.chunk.js.map",
+    "runtime-main.js": "/Merkury-ui-home-task/static/js/runtime-main.da2b1909.js",
+    "runtime-main.js.map": "/Merkury-ui-home-task/static/js/runtime-main.da2b1909.js.map",
+    "static/js/2.b7cb922b.chunk.js": "/Merkury-ui-home-task/static/js/2.b7cb922b.chunk.js",
+    "static/js/2.b7cb922b.chunk.js.map": "/Merkury-ui-home-task/static/js/2.b7cb922b.chunk.js.map",
+    "static/js/3.5bb9b342.chunk.js": "/Merkury-ui-home-task/static/js/3.5bb9b342.chunk.js",
+    "static/js/3.5bb9b342.chunk.js.map": "/Merkury-ui-home-task/static/js/3.5bb9b342.chunk.js.map",
+    "index.html": "/Merkury-ui-home-task/index.html",
+    "static/css/main.3c6c1c0b.chunk.css.map": "/Merkury-ui-home-task/static/css/main.3c6c1c0b.chunk.css.map",
+    "static/js/2.b7cb922b.chunk.js.LICENSE.txt": "/Merkury-ui-home-task/static/js/2.b7cb922b.chunk.js.LICENSE.txt",
+    "static/media/logo.168ac20f.svg": "/Merkury-ui-home-task/static/media/logo.168ac20f.svg",
+    "static/media/profile_1.010522d3.jpg": "/Merkury-ui-home-task/static/media/profile_1.010522d3.jpg",
+    "static/media/profile_2.1c20ca1e.jpg": "/Merkury-ui-home-task/static/media/profile_2.1c20ca1e.jpg",
+    "static/media/workFlow_img.68940eca.svg": "/Merkury-ui-home-task/static/media/workFlow_img.68940eca.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.da2b1909.js",
+    "static/js/2.b7cb922b.chunk.js",
+    "static/css/main.3c6c1c0b.chunk.css",
+    "static/js/main.e457bd0c.chunk.js"
+  ]
+}
