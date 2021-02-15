@@ -7,7 +7,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 
 function App(props) {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <div className='App'>
         <Main />
       </div>
