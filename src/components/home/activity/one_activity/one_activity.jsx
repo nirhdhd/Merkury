@@ -1,6 +1,5 @@
 import "../one_activity/one_activity.scss";
 import clock from "../../../../assets/images/activity/clock_grey.png";
-import profile_1 from "../../../../assets/images/profilesImages/profile_1.jpg";
 
 const One_activity = (props) => {
   return (

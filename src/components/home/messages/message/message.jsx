@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import "./message.scss";
 import arrowBack from "../../../../assets/images/messages/arrowBack.png";
 import settings from "../../../../assets/images/messages/settings.png";
-//import profile_2 from "../../../assets/images/profilesImages/profile_2.png";
 
 const Message = (props) => {
   const [divColor, setDivColor] = useState({ backgroundColor: "white" });

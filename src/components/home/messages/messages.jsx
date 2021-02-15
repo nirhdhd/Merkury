@@ -1,9 +1,26 @@
 import Message from "./message/message";
 import "./messages.scss";
-import profile_3 from "../../../assets/images/profilesImages/profile_3.png";
-import profile_6 from "../../../assets/images/profilesImages/profile_6.png";
+import { useSelector } from "react-redux";
 
 const Messages = () => {
+  const messagesData = useSelector((state) => state.MessagesData);
+
+  const messagesElements = () => {
+    let elements = [];
+    messagesData.map((item) =>
+      elements.push(
+        <Message
+          pic={item.pic}
+          name={item.name}
+          time={item.time}
+          text={item.text}
+          notRead={item.notRead}
+        />
+      )
+    );
+    return elements;
+  };
+
   return (
     <div>
       <div className='messages_header'>
@@ -12,34 +29,7 @@ const Messages = () => {
           <span className='circle1'>2</span>
         </span>
       </div>
-      <div className='messages_list'>
-        <Message
-          pic={profile_3}
-          name={"Nina Jones"}
-          time={"5 minutes ago"}
-          text={"Hey You! It’s me again :-) I attached new (...)"}
-          notRead={true}
-        />
-        <Message
-          pic={profile_3}
-          name={"Nina Jones"}
-          time={"About 20 hours ago"}
-          text={"Hey! I attached some new PSD files for (...)"}
-          notRead={true}
-        />
-        <Message
-          pic={profile_6}
-          name={"James Smith"}
-          time={"2 days ago"}
-          text={"Good morning, you are fired!"}
-        />
-        <Message
-          pic={profile_3}
-          name={"Nina Jones"}
-          time={"About 2 weeks ago"}
-          text={"Hello! Could You bring me coffee please?"}
-        />
-      </div>
+      <div className='messages_list'>{messagesElements()}</div>
     </div>
   );
 };

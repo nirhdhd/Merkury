@@ -1,7 +1,22 @@
 import "../tasks/tasks.scss";
 import Task from "./task/task";
+import { useSelector } from "react-redux";
 
 const Tasks = () => {
+  const tasksData = useSelector((state) => state.tasksData);
+
+  const tasksElements = () => {
+    let elements = [];
+    tasksData.map((item) =>
+      elements.push(
+        <Task letter={item.letter} header={item.header} time={item.time}>
+          {" "}
+        </Task>
+      )
+    );
+    return elements;
+  };
+
   return (
     <div>
       <div className='tasks_header'>
@@ -11,28 +26,7 @@ const Tasks = () => {
           <span className='circle2'>2</span>
         </span>
       </div>
-      <div className='tasks_list'>
-        <Task
-          letter={"N"}
-          header={"New website for Symu.co"}
-          time={"5 days delays"}
-        ></Task>
-        <Task
-          letter={"F"}
-          header={"Free business PSD Template "}
-          time={"2 days delays"}
-        ></Task>
-        <Task
-          letter={"N"}
-          header={"New logo for JCD.pl"}
-          time={"10 days left"}
-        ></Task>
-        <Task
-          letter={"F"}
-          header={"Free Icons Set vol. 3"}
-          time={"10 days left"}
-        ></Task>
-      </div>
+      <div className='tasks_list'>{tasksElements()}</div>
     </div>
   );
 };
